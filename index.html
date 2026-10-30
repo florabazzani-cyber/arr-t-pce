@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Présentation d’un arrêt de la Cour de cassation – Procédures civiles d’exécution</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#fbfbf9;--surface:#f2f2ee;--ink:#1c2230;--muted:#5f6675;--line:#dcdcd5;--accent:#1f3a5f;
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;--sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171d;--surface:#1c2028;--ink:#e8e8e3;--muted:#9aa1b0;--line:#2b303b;--accent:#8fb0dd}}
+:root[data-theme="dark"]{--bg:#14171d;--surface:#1c2028;--ink:#e8e8e3;--muted:#9aa1b0;--line:#2b303b;--accent:#8fb0dd}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 1.5rem);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.125rem;line-height:1.7}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.layout{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:4rem;max-width:68rem;margin:0 auto;padding:3rem 1.5rem 5rem}
+nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 2rem);align-self:start;font-family:var(--sans);font-size:.95rem}
+nav .site{font-weight:600;margin:0 0 1.25rem;line-height:1.35}
+nav ul{list-style:none;margin:0;padding:0;border-left:1px solid var(--line)}
+nav li a{display:block;padding:.35rem 0 .35rem 1rem;margin-left:-1px;border-left:2px solid transparent;color:var(--muted);text-decoration:none}
+nav li a:hover,nav li a.on{color:var(--ink);border-left-color:var(--accent)}
+header{padding-bottom:2.5rem;border-bottom:1px solid var(--line);margin-bottom:3rem}
+header .ref{font-family:var(--sans);color:var(--muted);font-size:.95rem;margin:0 0 1rem}
+h1{font-weight:600;font-size:clamp(2rem,4.5vw,3rem);line-height:1.15;letter-spacing:-.01em;margin:0 0 1.25rem}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1.25rem 2rem;margin:2rem 0 0;font-family:var(--sans)}
+.meta dt{font-size:.85rem;color:var(--muted)}
+.meta dd{margin:.15rem 0 0;font-weight:500}
+section{margin-bottom:3.5rem;max-width:42rem}
+h2{font-weight:600;font-size:1.65rem;line-height:1.25;margin:0 0 1rem}
+p{margin:0 0 1rem}
+.todo{color:var(--muted);font-style:italic}
+.panel{background:var(--surface);border-left:3px solid var(--accent);padding:1.25rem 1.5rem;margin:0 0 1rem}
+.panel p:last-child{margin:0}
+blockquote{margin:0 0 1rem;padding:0 0 0 1.5rem;border-left:1px solid var(--line);font-style:italic}
+.timeline{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:1px solid var(--line)}
+.timeline li{position:relative;padding-bottom:1.5rem}
+.timeline li::before{content:"";position:absolute;left:calc(-1.5rem - 4px);top:.75rem;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.timeline time{display:block;font-family:var(--sans);font-size:.9rem;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.cols h3{font-family:var(--sans);font-size:1rem;margin:0 0 .5rem}
+section h3{font-family:var(--sans);font-size:1.05rem;font-weight:600;margin:2rem 0 .75rem}
+section h3:first-of-type{margin-top:0}
+.pts h3:first-child{margin-top:0}
+.refs{list-style:none;margin:0;padding:0;font-family:var(--sans);font-size:1rem}
+.refs li{padding:.75rem 0;border-top:1px solid var(--line)}
+.refs li:last-child{border-bottom:1px solid var(--line)}
+footer{font-family:var(--sans);font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1.5rem;max-width:42rem}
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:3px;background:#b8975a;transform:scaleX(0);transform-origin:left;z-index:20}
+.banner{position:relative;overflow:hidden;background:#14233b;color:#f1ece0;border-bottom:3px solid #b8975a;animation:fall .8s cubic-bezier(.2,.7,.2,1) both}
+.banner::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.045) 0 1px,transparent 1px 3.5rem);pointer-events:none}
+.banner-in{position:relative;display:flex;align-items:center;gap:1.1rem;max-width:68rem;margin:0 auto;padding:1.25rem 1.5rem}
+.banner svg{flex:none;width:2.6rem;height:2.6rem;color:#d6b97c}
+.banner svg .draw{stroke-dasharray:1;animation:draw 1.4s .3s ease both}
+.b-title{display:block;font-size:1.35rem;font-weight:600;letter-spacing:.01em;line-height:1.2}
+.b-sub{display:block;font-family:var(--sans);font-size:.9rem;color:#b9c0cf}
+.b-ref{margin-left:auto;font-family:var(--sans);font-size:.9rem;color:#d6b97c;border:1px solid rgba(214,185,124,.45);padding:.3rem .7rem;border-radius:2px;white-space:nowrap}
+header>*{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+header>*:nth-child(1){animation-delay:.25s}
+header>*:nth-child(2){animation-delay:.35s}
+header>*:nth-child(3){animation-delay:.45s}
+header>*:nth-child(4){animation-delay:.55s}
+html.js main section,html.js .timeline li{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+html.js main section.in,html.js .timeline li.in{opacity:1;transform:none}
+nav li a{transition:color .2s,border-color .2s}
+@keyframes fall{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (max-width:40rem){.b-ref{display:none}.banner-in{padding:1rem 1.25rem}.b-title{font-size:1.15rem}}
+@media (prefers-reduced-motion:reduce){.banner,header>*,.banner svg .draw{animation:none}html.js main section,html.js .timeline li{opacity:1;transform:none;transition:none}.progress{display:none}}
+details.arret{border:1px solid var(--line);background:var(--surface)}
+details.arret summary{cursor:pointer;font-family:var(--sans);font-weight:600;padding:1rem 1.25rem;list-style:none}
+details.arret summary::-webkit-details-marker{display:none}
+details.arret summary::after{content:"+";float:right;color:var(--accent)}
+details.arret[open] summary::after{content:"\2013"}
+.arret-body{padding:1.25rem;border-top:1px solid var(--line);font-size:1rem;line-height:1.65}
+.arret-body p{margin:0 0 .9rem}
+.arret-body .c{text-align:center;font-family:var(--sans);font-weight:600}
+.arret-body .n{font-family:var(--sans);font-weight:600;color:var(--accent);margin-right:.5rem}
+.arret-body .sub{margin-left:1.25rem}
+.arret-body .sub2{margin-left:2.5rem}
+.arret-body .lab{font-family:var(--sans);font-style:italic;color:var(--muted)}
+.arret-body h3{font-family:var(--sans);font-size:1.1rem;margin:1.75rem 0 .75rem}
+.arret-body h4{font-family:var(--sans);font-size:1rem;font-weight:600;margin:1.5rem 0 .5rem}
+@media (max-width:52rem){
+  .layout{grid-template-columns:1fr;gap:2rem;padding-top:2rem}
+  nav{position:static}
+  nav ul{display:flex;gap:1rem;overflow-x:auto;border-left:0;border-bottom:1px solid var(--line)}
+  nav li a{white-space:nowrap;padding:.5rem 0;border-left:0;border-bottom:2px solid transparent;margin:0 0 -1px}
+  nav li a:hover,nav li a.on{border-bottom-color:var(--accent)}
+  .cols{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<script>if('IntersectionObserver' in window)document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="banner">
+  <div class="banner-in">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle class="draw" pathLength="1" cx="24" cy="6" r="2"/>
+      <path class="draw" pathLength="1" d="M24 8V40M15 41H33"/>
+      <path class="draw" pathLength="1" d="M10 14H38"/>
+      <path class="draw" pathLength="1" d="M10 14L4 28a6 6 0 0 0 12 0L10 14zM38 14L32 28a6 6 0 0 0 12 0L38 14z"/>
+    </svg>
+    <div>
+      <span class="b-title">Cour de cassation</span>
+      <span class="b-sub">Procédures civiles d’exécution · Fiche d’arrêt</span>
+    </div>
+    <span class="b-ref">Pourvoi n° 24-10.958</span>
+  </div>
+</div>
+<div class="layout">
+  <nav aria-label="Sommaire">
+    <p class="site">Présentation d’un arrêt de la Cour de cassation<br>Procédures civiles d’exécution</p>
+    <ul>
+      <li><a href="#resume">Résumé</a></li>
+      <li><a href="#faits">Faits et procédure</a></li>
+      <li><a href="#appel">Cour d’appel</a></li>
+      <li><a href="#moyens">Moyens du pourvoi</a></li>
+      <li><a href="#question">Question de droit</a></li>
+      <li><a href="#solution">Solution de la Cour</a></li>
+      <li><a href="#portee">Portée</a></li>
+      <li><a href="#critique">Critique</a></li>
+      <li><a href="#arret">Texte de l’arrêt</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header id="top">
+      <p class="ref">Cass. 2e civ., 1er octobre 2026, n° 24-10.958, FS-B</p>
+      <h1>Al-Kharafi c/ Libyan Investment Authority : contestation d’une saisie-attribution d’avoirs gelés</h1>
+      <p>Une saisie-attribution pratiquée en 2013 sur des avoirs gelés d’une société libyenne est contestée huit ans plus tard. Le point de départ du délai de contestation et les effets du gel des avoirs sont au cœur du pourvoi.</p>
+      <dl class="meta">
+        <div><dt>Juridiction</dt><dd>Cour de cassation, deuxième chambre civile</dd></div>
+        <div><dt>Date</dt><dd>1er octobre 2026</dd></div>
+        <div><dt>Pourvoi</dt><dd>n° H 24-10.958 (arrêt n° 924)</dd></div>
+        <div><dt>Publication</dt><dd>Publié au Bulletin (FS-B)</dd></div>
+        <div><dt>Matière</dt><dd>Saisie-attribution, avoirs gelés</dd></div>
+        <div><dt>Solution</dt><dd>Rejet du pourvoi</dd></div>
+      </dl>
+    </header>
+
+    <section id="resume">
+      <h2>Résumé</h2>
+      <div class="panel"><p>La deuxième chambre civile rejette le pourvoi. Elle juge que la dénonciation d’une saisie-attribution à l’État étranger débiteur ne fait pas courir le délai de contestation à l’égard de l’entité distincte dont les fonds sont saisis : celle-ci doit avoir eu connaissance de la saisie pour exercer son droit au recours.</p>
+      <p>Elle juge aussi que le juge de l’exécution ne peut valider une saisie-attribution portant sur des fonds gelés par le règlement (UE) 2016/44 sans autorisation préalable du directeur du Trésor.</p></div>
+    </section>
+
+    <section id="faits">
+      <h2>Faits et procédure</h2>
+      <p>Le litige oppose deux sociétés : la société de droit koweïtien Mohamed Abdel Moshen Al-Kharafi et fils, dont le siège est en Égypte (la société Al-Kharafi), et la société de droit libyen Libyan Investment Authority, dont le siège est en Libye (LIA).</p>
+      <h3>Les faits</h3>
+      <ol class="timeline">
+        <li><time>22 mars 2013</time>Une sentence arbitrale condamne l’État libyen à payer la société Al-Kharafi.</li>
+        <li>Une ordonnance irrévocable du président d’un tribunal de grande instance rend la sentence exécutoire en France. Elle est signifiée à l’État libyen.</li>
+        <li><time>13 août 2013</time>La société Al-Kharafi pratique une saisie-attribution entre les mains de la Société générale, sur les sommes détenues au nom de LIA, personne morale de droit libyen.</li>
+        <li><time>21 août 2013</time>La saisie est dénoncée à l’État libyen.</li>
+      </ol>
+      <div class="panel"><p>La saisie-attribution portait sur des avoirs gelés de LIA.</p></div>
+      <h3>La procédure</h3>
+      <ol class="timeline">
+        <li><time>27 septembre 2021</time>LIA assigne la société Al-Kharafi devant le juge de l’exécution du tribunal judiciaire de Paris. Elle conteste la saisie du 13 août 2013 et demande sa mainlevée.</li>
+        <li><time>28 février 2022</time>Le juge de l’exécution déclare la contestation irrecevable. LIA fait appel.</li>
+        <li><time>23 novembre 2023</time>La cour d’appel de Paris infirme le jugement, déclare la contestation recevable et ordonne la mainlevée de la saisie.</li>
+        <li>La société Al-Kharafi se pourvoit en cassation.</li>
+        <li><time>8 juillet 2026</time>Audience publique devant la deuxième chambre civile.</li>
+        <li><time>1er octobre 2026</time>Arrêt de rejet.</li>
+      </ol>
+    </section>
+
+    <section id="appel">
+      <h2>Motivation de la cour d’appel</h2>
+      <p>La cour d’appel déclare la contestation de LIA recevable pour trois raisons.</p>
+      <div class="pts">
+        <h3>Le délai de contestation n’a pas couru</h3>
+        <p>La saisie-attribution n’a pas été dénoncée personnellement à LIA : elle l’a été à l’État libyen. Le délai de contestation, qui court à compter de la dénonciation, n’avait donc pas commencé.</p>
+        <h3>Le délai court à compter de la remise effective de l’acte</h3>
+        <p>Il n’est pas prouvé que le ministre libyen des affaires étrangères a remis l’acte aux destinataires énumérés, en particulier à LIA, dans le courrier de l’ambassade du 10 novembre 2013.</p>
+        <h3>Les avoirs gelés ne peuvent pas être saisis sans autorisation</h3>
+        <p>Une saisie-attribution d’avoirs gelés, pratiquée sans autorisation préalable de l’autorité nationale compétente, ne peut pas être validée par le juge de l’exécution en vertu du règlement (UE) 2016/44.</p>
+        <p>Elle relève que les fonds de LIA se trouvant en France sont gelés depuis le 16 septembre 2011 et que la société Al-Kharafi n’a pas obtenu l’autorisation de la direction générale du Trésor. Elle s’appuie sur des arrêts de la Cour de cassation du 7 septembre 2022 et sur la jurisprudence de la Cour de justice de l’Union européenne relative au règlement de gel iranien, rédigé dans les mêmes termes, selon laquelle l’autorisation doit précéder la saisie.</p>
+      </div>
+    </section>
+
+    <section id="moyens">
+      <h2>Moyens du pourvoi</h2>
+      <p>La société Al-Kharafi invoque trois moyens. Elle reproche à l’arrêt d’avoir déclaré la contestation recevable (premier moyen) et d’avoir ordonné la mainlevée de la saisie (troisième moyen). L’arrêt n’expose que le premier moyen et la première branche du troisième.</p>
+      <div class="pts">
+        <h3>Premier moyen, première branche</h3>
+        <p>La saisie a été régulièrement dénoncée à l’État libyen le 21 août 2013, puis transmise par voie diplomatique le 10 novembre 2013. Elle était donc opposable à son émanation, sans nouvelle signification. Le délai de contestation était de trois mois : un mois, augmenté de deux mois lorsque la personne demeure à l’étranger.</p>
+        <h3>Premier moyen, seconde branche</h3>
+        <p>La cour d’appel ne pouvait pas retenir qu’il n’était pas prouvé que le ministre libyen des affaires étrangères avait remis l’acte à LIA, alors qu’elle avait elle-même constaté la validité de la dénonciation.</p>
+        <p>L’acte d’huissier du 21 août 2013 a été remis au parquet pour transmission par voie diplomatique. Une lettre de l’ambassade de France en Libye du 10 août 2013 (date telle que reproduite dans l’arrêt) atteste des démarches entreprises auprès du ministère libyen des affaires étrangères. Celui-ci a accusé réception de l’acte le jour même, ainsi que de son devoir de le remettre à LIA.</p>
+        <h3>Troisième moyen, première branche</h3>
+        <p>Le règlement européen n’interdit pas au juge de l’exécution de valider une saisie d’avoirs gelés pratiquée sans autorisation préalable de l’autorité nationale compétente. Cette autorisation n’est requise que pour le paiement. La cour d’appel a ainsi ajouté une condition que le texte ne prévoit pas.</p>
+      </div>
+    </section>
+
+    <section id="question">
+      <h2>Question de droit</h2>
+      <h3>Le délai de contestation</h3>
+      <p>La dénonciation d’une saisie-attribution à l’État étranger débiteur fait-elle courir le délai d’un mois de l’article R. 211-11 du code des procédures civiles d’exécution à l’égard de l’entité distincte, dotée de la personnalité juridique, dont les fonds sont saisis ?</p>
+      <h3>La saisie d’avoirs gelés</h3>
+      <p>Le juge de l’exécution peut-il valider une saisie-attribution pratiquée sur des fonds gelés par le règlement (UE) 2016/44 sans autorisation préalable de l’autorité nationale compétente, alors que l’article 11, § 2, évoque l’autorisation au titre du paiement ?</p>
+    </section>
+
+    <section id="solution">
+      <h2>Solution de la Cour</h2>
+      <h3>Réponse à la première question</h3>
+      <p>La Cour de cassation rappelle les règles posées par les articles R. 211-3 et R. 211-11 du code des procédures civiles d’exécution.</p>
+      <ul>
+        <li><strong>Article R. 211-3</strong> : à peine de caducité, la saisie-attribution est dénoncée au débiteur par acte d’huissier dans un délai de huit jours.</li>
+        <li><strong>Article R. 211-11</strong> : à peine d’irrecevabilité, les contestations de cette saisie sont formées dans un délai d’un mois à compter de la dénonciation de celle-ci au débiteur.</li>
+      </ul>
+      <p>Elle rappelle, en vertu du premier article, que la saisie-attribution pratiquée à l’encontre d’un État étranger, sur des fonds détenus par une personne morale, doit être dénoncée à cet État étranger dans le délai de huit jours prévu.</p>
+      <p>Elle rappelle la jurisprudence de la première chambre civile du 6 février 2007 pour répondre :</p>
+      <ul>
+        <li>à la question de savoir si la saisie dénoncée au seul État étranger était régulière ;</li>
+        <li>à la question de savoir si le défaut de dénonciation à une personne morale, émanation de cet État étranger, emportait la caducité.</li>
+      </ul>
+      <p>Cette saisie, régulièrement dénoncée à l’État étranger, est bien opposable à son émanation sans nouvelle signification.</p>
+      <p>La Cour répond ensuite à la question de savoir si la dénonciation de la saisie-attribution à l’État étranger (l’État libyen) a fait courir le délai de contestation de cette saisie pour la société LIA.</p>
+      <p>Elle opère une distinction entre « connaissance » et « dénonciation » : elle qualifie LIA d’entité distincte de l’État libyen et disposant d’une personnalité juridique propre. Pour que LIA préserve son droit au recours, elle doit elle-même avoir connaissance de la saisie pratiquée, indépendamment de la dénonciation faite à l’État étranger, afin de pouvoir contester la saisie-attribution, tout comme la qualification d’émanation retenue par le créancier saisissant, ou encore l’insaisissabilité des fonds faisant l’objet d’une mesure de gel des avoirs.</p>
+      <p>La Cour rappelle également la jurisprudence de la première chambre civile rendue le 17 juin 2026 : une entité distincte d’un État étranger et disposant d’une personnalité juridique propre est considérée comme une émanation de cet État lorsque son patrimoine se confond avec celui de ce dernier et qu’elle ne dispose pas d’une autonomie de fait et de droit, faute d’indépendance fonctionnelle.</p>
+      <p>De ce fait, en l’absence de dénonciation à LIA, le délai de contestation de la saisie-attribution n’avait pas commencé à courir pour la société LIA. La contestation formée était donc recevable, ce que la cour d’appel a relevé à bon droit.</p>
+      <div class="panel">
+        <p><strong>Conclusion : la Cour rejette le moyen.</strong></p>
+        <ul>
+          <li>Elle qualifie la dénonciation faite à l’État étranger de régulière et opposable à une émanation d’un État étranger, en application d’une jurisprudence antérieure.</li>
+          <li>Cependant, elle constate que LIA, entité distincte de l’État libyen débiteur et dotée d’une personnalité juridique propre, devait avoir connaissance de la saisie indépendamment de la dénonciation faite à l’État libyen : de ce fait, le délai de contestation n’a pas commencé à courir et la contestation de la saisie formée par LIA est recevable.</li>
+        </ul>
+      </div>
+      <p>La Cour rejette également le moyen formé par la société Al-Kharafi en ce qu’il est mélangé de fait et de droit : la société Al-Kharafi n’avait pas soutenu devant la cour d’appel que la date de la dénonciation était celle de la remise de l’acte au ministère des affaires étrangères libyen.</p>
+
+      <h3>Réponse à la deuxième question</h3>
+      <p>La Cour de cassation énonce les règles posées par le règlement (UE) 2016/44. Ce règlement désigne des entités dont les fonds, qu’elles possédaient à la date du 16 septembre 2011, restent gelés. Il est cependant possible de débloquer ces fonds sous certaines conditions, par les autorités compétentes des États membres. En France, l’autorité compétente pour débloquer des fonds est la direction générale du Trésor.</p>
+      <p>Sur le fondement de ces règles, la Cour rappelle que :</p>
+      <ul>
+        <li>le règlement a pour objectif de prévenir la menace que représentent les personnes ou entités détenant des fonds publics libyens détournés sous l’ancien régime de cet État, fonds qui pourraient déstabiliser la paix et la reconstruction politique de ce dernier ;</li>
+        <li>de ce fait, aucune mesure d’exécution ne peut être prononcée sur ces fonds sans l’autorisation préalable de l’autorité compétente, ici le directeur du Trésor. Cette exigence vaut pour toute mesure d’exécution, y compris celle qui ne conférerait au créancier qu’un simple droit de préférence.</li>
+      </ul>
+      <p>Le juge de l’exécution ne peut donc valider une mesure d’exécution portant sur des fonds ayant fait l’objet d’une mesure de gel en vertu du règlement 2016/44 lorsque cette mesure n’a pas reçu l’autorisation préalable de l’autorité compétente.</p>
+      <p>En l’espèce, les fonds détenus par LIA étaient gelés et la société Al-Kharafi n’a pas reçu l’autorisation du directeur du Trésor de débloquer ces fonds, ce qui a été relevé par la cour d’appel.</p>
+      <p>De plus, la Cour valide le raisonnement de la cour d’appel, qui constate, au regard de l’interprétation donnée par la CJUE du règlement, que l’autorisation de l’autorité compétente est bien préalable à la saisie. Elle ne devait pas être donnée au stade du paiement, postérieurement à la saisie, comme le soulevait la société Al-Kharafi.</p>
+      <div class="panel"><p>La mesure de saisie-attribution, qui n’a pas reçu l’autorisation de la direction générale du Trésor pour débloquer les fonds saisis, est donc nulle.</p></div>
+
+      <h3>Conclusion générale</h3>
+      <div class="panel"><p>La Cour de cassation rejette le pourvoi et condamne la société Al-Kharafi aux dépens.</p></div>
+    </section>
+
+    <section id="portee">
+      <h2>Portée</h2>
+      <div class="pts">
+        <h3>Pour les créanciers</h3>
+        <p>Dénoncer la saisie à l’État débiteur ne suffit pas à faire courir le délai de contestation de l’entité dont les fonds sont saisis : il faut aussi lui dénoncer la saisie, ou s’assurer qu’elle en a eu connaissance. Lorsque les fonds sont gelés, l’autorisation du directeur du Trésor doit être obtenue avant toute mesure.</p>
+        <h3>Pour les entités saisies</h3>
+        <p>Tant que la saisie ne leur a pas été dénoncée, elles peuvent la contester, même plusieurs années après (ici, huit ans), et invoquer le gel de leurs avoirs.</p>
+        <h3>Pour le juge de l’exécution</h3>
+        <p>Il ne peut ni autoriser ni valider une saisie-attribution sur des fonds gelés en l’absence d’autorisation préalable du directeur du Trésor.</p>
+        <h3>Valeur de l’arrêt</h3>
+        <p>Publié au Bulletin (FS-B), l’arrêt confirme la position adoptée par la Cour de cassation en septembre 2022 et complète la jurisprudence sur les saisies pratiquées contre les États étrangers et leurs émanations. Son raisonnement sur les mesures de gel pourrait être transposé à d’autres règlements de gel rédigés dans les mêmes termes, ce que la cour d’appel envisageait pour le règlement iranien : l’hypothèse reste à confirmer.</p>
+      </div>
+    </section>
+
+    <section id="critique">
+      <h2>Critique</h2>
+      <h3>Première question : la dénonciation et le délai de contestation</h3>
+      <p><strong>Un manque de clarté.</strong> La Cour manque de clarté dans les termes utilisés. Elle explique que LIA devait avoir connaissance de la saisie-attribution, puis parle ensuite de défaut de dénonciation. Cela manque de clarté pour le lecteur de la solution.</p>
+      <p><strong>Un droit au recours renforcé pour le débiteur.</strong> Le délai de contestation ne commence pas à courir : malgré les années passées, sa contestation reste recevable.</p>
+      <p><strong>Une solution défavorable aux créanciers.</strong> Elle crée une insécurité juridique pour le créancier : même après plusieurs années, il existe un risque de contestation.</p>
+      <p><strong>Une vigilance accrue du créancier.</strong> Dans un contexte international, le créancier doit faire preuve de vigilance : la dénonciation ne devra pas être faite seulement à l’État étranger, mais également à la personne morale, dans le doute sur sa qualification d’émanation.</p>
+      <h3>Deuxième question : les avoirs gelés</h3>
+      <p><strong>Une solution conforme aux objectifs du règlement.</strong> Elle s’inscrit dans les objectifs poursuivis par le règlement, à savoir préserver la paix dans un pays qui se reconstruit politiquement, par le gel des avoirs détenus sous l’ancien régime.</p>
+      <p><strong>Une décision sévère pour les créanciers saisissants.</strong> Ils doivent demander une autorisation préalable à l’autorité compétente.</p>
+    </section>
+
+    <section id="arret">
+      <h2>Texte de l’arrêt</h2>
+      <p>Texte intégral de l’arrêt n° 924 du 1er octobre 2026 (pourvoi n° H 24-10.958), reproduit à partir du document de la Cour de cassation.</p>
+      <details class="arret">
+        <summary>Afficher le texte intégral</summary>
+        <div class="arret-body">
+<p class="c">RÉPUBLIQUE FRANÇAISE<br>AU NOM DU PEUPLE FRANÇAIS</p>
+<p class="c">ARRÊT DE LA COUR DE CASSATION, DEUXIÈME CHAMBRE CIVILE, DU 1ER OCTOBRE 2026</p>
+<p>La société Mohamed Abdel Moshen Al-Kharafi et fils, société de droit Koweitien, dont le siège est [Adresse 1] (Égypte), a formé le pourvoi n° H 24-10.958 contre l’arrêt rendu le 23 novembre 2023 par la cour d’appel de Paris (pôle 1, chambre 10), dans le litige l’opposant à la société Libyan Investment Authority (LIA), société de droit Libyen, dont le siège est [Adresse 2] (Libye), défenderesse à la cassation.</p>
+<p>La demanderesse invoque, à l’appui de son pourvoi, trois moyens de cassation.</p>
+<p>Le dossier a été communiqué au procureur général.</p>
+<p>Sur le rapport de Mme Chevet, conseillère référendaire, les observations écrites et orales de la SCP Alain Bénabent, avocat de la société Mohamed Abdel Moshen Al-Kharafi et fils, de la SARL Delvolvé et Trichet, avocat de la société Libyan Investment Authority, et l’avis de M. Adida-Canac, avocat général, après débats en l’audience publique du 8 juillet 2026 où étaient présents Mme Martinel, présidente, Mme Chevet, conseillère référendaire rapporteure, Mme Durin-Karsenty, conseillère doyenne, M. Delbano, Mmes Vendryes, Caillard, MM. Becuwe, Nuttens, conseillers, Mmes Techer, Latreille, M.</p>
+<p>Montfort, Mmes Barrès, Hulak, conseillers référendaires, M. Adida-Canac, avocat général, et Mme Gratian, greffière de chambre, la deuxième chambre civile de la Cour de cassation, composée, en application de l’article R. 431-5 du code de l’organisation judiciaire, de la présidente et des conseillers précités, après en avoir délibéré conformément à la loi, a rendu le présent arrêt.</p>
+<h3>Faits et procédure</h3>
+<p id="p1"><span class="n">1.</span>Selon l’arrêt attaqué (Paris, 23 novembre 2023), une sentence arbitrale rendue le 22 mars 2013 portant condamnation à paiement de l’Etat libyen au profit de la société Mohamed Abdel Moshen Al-Kharafi et fils (la société Al-Kharafi) a été rendue exécutoire en France par une ordonnance, devenue irrévocable, du président d’un tribunal de grande instance. Cette ordonnance a été signifiée à l’Etat libyen.</p>
+<p id="p2"><span class="n">2.</span>La société Al-Kharafi a fait pratiquer en France entre les mains de la Société générale, le 13 août 2013, une saisie-attribution des sommes détenues au nom de la Libyan Investment Authority (la LIA), personne morale de droit libyen.</p>
+<p id="p3"><span class="n">3.</span>La saisie a été dénoncée à l’Etat libyen.</p>
+<p id="p4"><span class="n">4.</span>Le 27 septembre 2021, la LIA a assigné la société Al-Kharafi devant le juge de l’exécution du tribunal judiciaire de Paris aux fins de contestation et de mainlevée de la saisie-attribution du 13 août 2013.</p>
+<p id="p5"><span class="n">5.</span>Par un jugement du 28 février 2022, dont la LIA a relevé appel, le juge de l’exécution a déclaré la contestation irrecevable.</p>
+<h3>Examen des moyens</h3>
+<h4>Sur le deuxième moyen et le troisième moyen, pris en sa seconde branche</h4>
+<p id="p6"><span class="n">6.</span>En application de l’article 1014, alinéa 2, du code de procédure civile, il n’y a pas lieu de statuer par une décision spécialement motivée sur ces griefs qui ne sont manifestement pas de nature à entraîner la cassation.</p>
+<h4>Sur le premier moyen, pris en sa première branche</h4>
+<p class="lab">Enoncé du moyen</p>
+<p id="p7"><span class="n">7.</span>La société Al-Kharafi fait grief à l’arrêt d’infirmer le jugement rendu le 28 février 2022 et, statuant à nouveau, de déclarer recevable la contestation de la saisie-attribution du 13 août 2013 formée par la LIA, alors « que les titres exécutoires et les saisies, régulièrement signifiés à l’Etat, sont opposables à son émanation sans nouvelle signification ; qu’à peine d’irrecevabilité, les contestations relatives à la saisie sont formées dans le délai d’un mois à compter de la dénonciation de la saisie au débiteur, lequel est augmenté de deux mois lorsque la personne demeure à l’étranger ; que pour déclarer recevable la contestation formée par la LIA le 27 septembre 2021 de la saisie-attribution pratiquée le 13 août 2013 par la société Al-Kharafi, la cour d’appel a considéré que la saisie ne lui avait pas été personnellement dénoncée de sorte que le délai de contestation n’avait pas commencé à courir à son encontre ; qu’en statuant ainsi alors que la saisie, régulièrement dénoncée à l’Etat libyen le 21 août 2013 et transmise par voie diplomatique le 10 novembre 2013, était opposable à son émanation sans nouvelle signification, la cour d’appel a violé les articles R. 211-3 et R. 211-11 du code des procédures civiles d’exécution. »</p>
+<p class="lab">Réponse de la Cour</p>
+<p id="p8"><span class="n">8.</span>Selon l’article R. 211-3 du code des procédures civiles d’exécution, à peine de caducité, la saisie-attribution est dénoncée au débiteur par acte d’huissier de justice dans un délai de huit jours.</p>
+<p id="p9"><span class="n">9.</span>Selon l’article R. 211-11 du même code, à peine d’irrecevabilité, les contestations relatives à la saisie sont formées dans le délai d’un mois à compter de la dénonciation de la saisie au débiteur.</p>
+<p id="p10"><span class="n">10.</span>Il résulte du premier de ces textes qu’une saisie-attribution pratiquée à l’encontre d’un Etat étranger sur des fonds détenus par une personne morale, qualifiée d’émanation d’Etat, doit être dénoncée, à peine de caducité, dans le délai de huit jours, à l’Etat étranger, débiteur désigné par le titre exécutoire fondant la saisie.</p>
+<p id="p11"><span class="n">11.</span>En ce sens, saisie de la question de savoir si la signification d’un titre exécutoire au seul Etat étranger était régulière et si, sur le fondement de l’article R. 211-3 du code des procédures civiles d’exécution, anciennement article 58 du décret n° 92-755 du 31 juillet 1992 alors applicable, le défaut de dénonciation des saisies à une émanation d’un Etat étranger auquel celles-ci avaient été dénoncées emportait ou non la caducité d’une saisie-attribution, la Cour de cassation a jugé que le titre et les saisies régulièrement signifiées à l’Etat étaient opposables à son émanation sans nouvelle signification, et rejeté le moyen sur ces deux points (1re Civ., 6 février 2007, pourvoi n° 04-13.107, 04-16.888).</p>
+<p id="p12"><span class="n">12.</span>Autre est la question posée par le présent pourvoi portant sur le droit au recours de la LIA et plus précisément sur le point de savoir si la dénonciation de la saisie-attribution à l’Etat libyen a fait ou non courir le délai de contestation de la mesure d’exécution à l’égard de la LIA.</p>
+<p id="p13"><span class="n">13.</span>Or, pour préserver son droit au recours, la LIA, qui constitue une entité distincte de l’Etat débiteur, et qui est dotée d’une personnalité juridique propre, doit elle-même avoir connaissance de la saisie pratiquée, indépendamment de la dénonciation faite à l’Etat débiteur, pour être en mesure de contester la saisie portant sur les fonds qu’elle détient, notamment la qualification d’émanation qui lui est attribuée par le créancier saisissant, ou encore l’insaisissabilité des fonds saisis en raison d’une mesure de gel des avoirs prévue par un règlement européen, d’autant plus, comme en l’espèce, lorsqu’elle est une entité désignée par ce texte.</p>
+<p id="p14"><span class="n">14.</span>A cet égard, la première chambre civile de la Cour de cassation a jugé qu’une créance contre un État étranger peut donner lieu à des mesures d’exécution en France sur un bien appartenant à une entité distincte de celui-ci et dotée d’une personnalité juridique propre, devant être considérée comme une de ses émanations lorsque cette entité n’est pas statutairement dans une indépendance fonctionnelle suffisante pour bénéficier d’une autonomie de droit et de fait à l’égard de l’État et que son patrimoine se confond avec celui de cet État (1re Civ., 17 juin 2026, pourvoi n° 23-10.435, publié).</p>
+<p id="p15"><span class="n">15.</span>C’est dès lors à bon droit que l’arrêt retient qu’à défaut de dénonciation de la saisie-attribution à la LIA, le délai d’un mois ne peut avoir couru à son encontre et que cette contestation était recevable.</p>
+<p id="p16"><span class="n">16.</span>Le moyen n’est, dès lors, pas fondé.</p>
+<h4>Sur le premier moyen, pris en sa seconde branche</h4>
+<p class="lab">Enoncé du moyen</p>
+<p id="p17"><span class="n">17.</span>La société Al-Kharafi fait le même grief à l’arrêt, alors « que, subsidiairement, les contestations relatives à la saisie sont, à peine d’irrecevabilité, formées dans le délai d’un mois à compter de la dénonciation de la saisie au débiteur lequel est augmenté de deux mois lorsque la personne demeure à l’étranger ; que pour déclarer recevable la contestation formée par la LIA le 27 septembre 2021 de la saisie-attribution pratiquée le 13 août 2013 par la société Al-Kharafi, la cour d’appel a considéré que le délai de contestation ne pouvait courir qu’à compter de la date de la remise effective de l’acte de dénonciation au destinataire et qu’il n’est pas prouvé que le ministère des affaires étrangères libyen a remis l’acte aux destinataires énumérés dans le courrier de l’ambassade du 10 novembre 2013, notamment la LIA ; qu’en statuant ainsi, alors qu’elle avait elle-même constaté que la saisie-attribution avait été valablement dénoncée par acte d’huissier du 21 août 2013 remis à parquet aux fins de transmission par la voie diplomatique et qu’une lettre de l’Ambassade de France en Libye du 10 août 2013 attestait des démarches entreprises auprès du ministère des affaires étrangères libyens lequel a accusé réception le jour même de l’acte de dénonciation et de son devoir de le remettre à la LIA, la cour d’appel a violé l’article R. 211-11 du code des procédures civiles d’exécution, ensemble l’article 684 du code de procédure civile ».</p>
+<p class="lab">Réponse de la Cour</p>
+<p id="p18"><span class="n">18.</span>Il ne résulte ni de l’arrêt ni des conclusions de la société Al-Kharafi déposées devant la cour d’appel que celle-ci ait soutenu que la dénonciation à la LIA devait être réputée faite à la date de la remise de l’acte au ministère des affaires étrangères libyen par l’ambassade de France en Libye.</p>
+<p id="p19"><span class="n">19.</span>Le moyen, nouveau et mélangé de fait et de droit, n’est donc pas recevable.</p>
+<h4>Sur le troisième moyen, pris en sa première branche</h4>
+<p class="lab">Enoncé du moyen</p>
+<p id="p20"><span class="n">20.</span>La société Al-Kharafi fait grief à l’arrêt d’infirmer le jugement rendu le 28 février 2022 et, statuant à nouveau, d’ordonner la mainlevée de la saisie-attribution pratiquée le 13 août 2013 entre les mains de la Société Générale, par la société Al-Kharafi à l’encontre de la LIA, alors « que le Règlement UE n° 2016/44 ne contient aucune disposition interdisant au juge de l’exécution de valider une saisie des avoirs gelés sans autorisation préalable de déblocage des fonds par l’autorité nationale compétente ; que l’article 11, § 2 dudit Règlement exige seulement une autorisation de l’autorité nationale compétente pour le paiement ; qu’en retenant le contraire, la Cour d’appel a ajouté une condition au Règlement qu’il ne prévoit pas et a ainsi violé l’article 11, § 2 du Règlement UE n° 2016/44, ensemble le Règlement lui-même ».</p>
+<p class="lab">Réponse de la Cour</p>
+<p id="p21"><span class="n">21.</span>Selon l’article 1 du règlement (UE) n° 2016/44 du Conseil du 18 janvier 2016 concernant des mesures restrictives en raison de la situation en Libye et abrogeant le règlement (UE) n° 204/2011, aux fins du présent règlement, on entend par :</p>
+<p class="sub">a) « fonds », les actifs financiers et les avantages économiques de toute nature, y compris et notamment, mais pas exclusivement :</p>
+<p class="sub2">i) le numéraire, les chèques, les créances en numéraire, les traites, les ordres de paiement et autres instruments de paiement ;</p>
+<p class="sub2">ii) les dépôts auprès d’établissements financiers ou d’autres entités, les soldes en comptes, les créances et les titres de créances ;</p>
+<p class="sub2">iii) les titres de propriété et d’emprunt, tels que les actions et autres titres de participation, les certificats représentatifs de valeurs mobilières, les obligations, les billets à ordre, les warrants, les obligations non garanties et les contrats sur produits dérivés, qu’ils soient négociés en Bourse ou fassent l’objet d’un placement privé ;</p>
+<p class="sub2">iv) les intérêts, les dividendes ou autres revenus d’actifs ou plus-values perçus sur des actifs ; [...]</p>
+<p class="sub">b) « gel des fonds », toute action visant à empêcher tout mouvement, transfert, modification, utilisation ou manipulation de fonds ou tout accès à ceux-ci qui aurait pour conséquence une modification de leur volume, de leur montant, de leur localisation, de leur propriété, de leur possession, de leur nature, de leur destination ou toute autre modification qui pourrait en permettre l’utilisation, y compris la gestion de portefeuilles.</p>
+<p id="p22"><span class="n">22.</span>Selon l’article 5, § 4, du même règlement, tous les fonds et ressources économiques qui appartiennent aux entités énumérées à l’annexe VI, parmi lesquelles figure la LIA, ou que celles-ci avaient en leur possession, détenaient ou contrôlaient à la date du 16 septembre 2011 et qui se trouvaient en dehors de Libye à cette date, restent gelés.</p>
+<p id="p23"><span class="n">23.</span>L’article 11, § 2, du même règlement dispose que, par dérogation à l’article 5, paragraphe 4, et pour autant qu’un paiement soit dû au titre d’un contrat ou d’un accord conclu ou d’une obligation souscrite par la personne, l’entité ou l’organisme concerné avant la date de sa désignation par le Conseil de sécurité ou le comité des sanctions, les autorités compétentes des États membres, mentionnées sur les sites internet énumérés à l’annexe IV, peuvent autoriser, dans les conditions qu’elles jugent appropriées, le déblocage de certains fonds ou ressources économiques gelés, pour autant que les conditions suivantes soient réunies :</p>
+<p class="sub">a) l’autorité compétente concernée a établi que le paiement n’enfreint pas l’article 5, paragraphe 2, ni ne profite à une entité visée à l’article 5, paragraphe 4 ;</p>
+<p class="sub">b) l’État membre concerné a notifié au comité des sanctions, dix jours ouvrables à l’avance, son intention d’accorder une autorisation.</p>
+<p id="p24"><span class="n">24.</span>L’autorité compétente pour la France est la Direction générale du Trésor, tel que le prévoit le site internet référencé à l’annexe IV du règlement n° 2016/44.</p>
+<p id="p25"><span class="n">25.</span>Il résulte des dispositions du règlement n° 2016/44, qui a pour objectif la prévention de « la menace que représentent les personnes et entités qui possèdent ou contrôlent des fonds publics libyens détournés sous l’ancien régime de [R] [G], susceptibles d’être utilisés pour mettre en danger la paix, la stabilité ou la sécurité en Libye , ou pour entraver ou compromettre la réussite de sa transition politique » (2ème considérant), que ne peut être diligentée, sur des fonds ou des ressources économiques gelés, aucune mesure d’exécution qui aurait pour effet, non seulement de les faire sortir du patrimoine du débiteur, mais aussi de conférer au créancier poursuivant un simple droit de préférence, sans une autorisation préalable du directeur du Trésor, autorité nationale désignée en application de l’article 11, § 2, du règlement.</p>
+<p id="p26"><span class="n">26.</span>Il en découle qu’à défaut d’autorisation préalable du directeur du Trésor, aucune mesure de saisie-attribution, laquelle emporte, à concurrence des sommes pour lesquelles elle est pratiquée, attribution immédiate au profit du saisissant de la créance saisie disponible entre les mains du tiers et de ses accessoires, ne peut être autorisée ou validée par le juge de l’exécution, saisi sur requête en application de l’article L. 111-1-1 du code des procédures civiles d’exécution, sur des fonds ou ressources économiques faisant l’objet d’une mesure de gel des avoirs en exécution du règlement n° 2016/44.</p>
+<p id="p27"><span class="n">27.</span>L’arrêt relève que le règlement du 18 janvier 2016 prévoit que les fonds et ressources économiques de la LIA se trouvant en France depuis le 16 septembre 2011 sont gelés et qu’il est constant que la société Al-Kahrafi n’a pas obtenu l’autorisation de la direction générale du Trésor de déblocage des fonds gelés.</p>
+<p id="p28"><span class="n">28.</span>Il rappelle que, par des arrêts du 7 septembre 2022, la Cour de cassation a énoncé que ne peut être diligentée, sur des fonds ou des ressources économiques gelés, aucune mesure d’exécution qui aurait pour effet, non seulement de les faire sortir du patrimoine du débiteur, mais aussi de conférer au créancier poursuivant un simple droit de préférence, sans une autorisation préalable du directeur du Trésor, autorité nationale désignée en application de l’article 11, § 2, du règlement n° 2016/44, une telle interprétation étant indispensable pour assurer l’efficacité des mesures restrictives, quels qu’en soient les effets sur les créanciers étrangers aux détournements de fonds publics opérés sous l’ancien régime libyen.</p>
+<p id="p29"><span class="n">29.</span>Il retient, d’une part, que rien ne justifie d’adopter une solution différente, le présent litige portant sur une saisie-attribution pratiquée par le même créancier sur des avoirs de la LIA également gelés en application du même règlement de gel n° 2016/44 concernant la Libye et, d’autre part, que la société Al-Kharafi ne saurait valablement soutenir que l’autorisation de l’autorité nationale compétente n’est prévue par le règlement qu’au stade du paiement, c’est-à-dire postérieurement à la saisie, alors que la Cour de justice de l’union européenne, statuant sur l’interprétation à donner au règlement de gel iranien rédigé dans les mêmes termes, a dit au contraire que cette autorisation devait être préalable à la saisie.</p>
+<p id="p30"><span class="n">30.</span>En l’état de ces constatations et énonciations, la cour d’appel a exactement décidé qu’en l’absence d’autorisation délivrée par la direction générale du Trésor, la saisie-attribution était nulle.</p>
+<p id="p31"><span class="n">31.</span>Le moyen n’est, dès lors, pas fondé.</p>
+<p><strong>PAR CES MOTIFS, la Cour :</strong></p>
+<p>REJETTE le pourvoi ;</p>
+<p>Condamne la société Mohamed Abdel Moshen Al-Kharafi et fils aux dépens ;</p>
+<p>En application de l’article 700 du code de procédure civile, rejette la demande formée par la société Mohamed Abdel Moshen Al-Kharafi et fils et la condamne à payer à la Libyan Investment Authority la somme de 3 000 euros ;</p>
+<p>Ainsi fait et jugé par la Cour de cassation, deuxième chambre civile, et prononcé publiquement le premier octobre deux mille vingt-six par mise à disposition de l’arrêt au greffe de la Cour, les parties ayant été préalablement avisées dans les conditions prévues au deuxième alinéa de l’article 450 du code de procédure civile.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+</div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('nav a'));
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}
+    });
+  },{rootMargin:'-20% 0px -70% 0px'});
+  document.querySelectorAll('main section').forEach(function(s){io.observe(s)});
+})();
+</script>
+<script>
+(function(){
+  var bar=document.querySelector('.progress'),tick=false;
+  function upd(){tick=false;var h=document.documentElement.scrollHeight-window.innerHeight;var p=h>0?Math.min(1,window.scrollY/h):0;bar.style.transform='scaleX('+p+')'}
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});
+  upd();
+  if(!document.documentElement.classList.contains('js'))return;
+  var els=[].slice.call(document.querySelectorAll('main section, .timeline li'));
+  els.forEach(function(el){if(el.tagName==='LI'){el.style.setProperty('--d',([].indexOf.call(el.parentNode.children,el)*0.12)+'s')}});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
